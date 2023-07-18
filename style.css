@@ -1,0 +1,42 @@
+* {
+  /* 因為有些標籤會有預設的padding與border，這邊把它消除 */
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* 讓整個頁面顏色變成黑色 */
+  background-color: black;
+  display: flex;
+  /* flex-direction設定為column讓flex item垂直排列 */
+  flex-direction: column;
+  /* 設定align-items為center讓他們沿著row(水平)置中 */
+  align-items: center;
+}
+
+#myCanvas {
+  border: 5px solid lightgreen;
+  position: absolute;
+  /* 會讓canvas的左上角定位在網頁下方60%和右方50%的位子 */
+  top: 60%;
+  left: 50%;
+  /* 讓這個Canvas的x軸和y軸都相對自己平移50%回來，這樣就會變成canvas的正中間對齊指定的位子 */
+  transform: translate(-50%, -50%);
+}
+
+#myScore,
+#myScore2 {
+  color: white;
+  font-size: 1.5rem;
+  margin: 10px;
+}
+
+#Start {
+  padding: 0.25rem 0.5rem;
+  background-color: yellow;
+  font-size: 1.15rem;
+  /* button預設display是inlineblock，inlineblock不會換行，所以這裡設定為block */
+  display: block;
+  margin-top: 15px;
+}

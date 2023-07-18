@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="可以遊玩貪食蛇遊戲的網站" />
+    <meta name="author" content="Joan Yu" />
+    <meta name="keyword" content="貪食蛇,遊戲" />
+    <title>貪食蛇遊戲</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- HTML canvas用來在網頁上繪製圖形 -->
+    <canvas
+      id="myCanvas"
+      width="320"
+      height="320"
+      style="background-color: black"
+    ></canvas>
+    <p id="myScore"></p>
+    <p id="myScore2"></p>
+    <!-- onclick="location.reload()讓我們每次點擊此按鈕就重新整理網頁 -->
+    <button type="button" id="Start" onclick="location.reload()">
+      開始新遊戲
+    </button>
+    <script src="./app.js"></script>
+  </body>
+</html>
